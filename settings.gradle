@@ -1,1 +1,1 @@
-include ':app', ':LzyLib'
+include  ':magiccounter',':LzyLib'

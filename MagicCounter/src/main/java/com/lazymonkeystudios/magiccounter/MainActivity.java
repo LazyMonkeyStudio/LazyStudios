@@ -1,21 +1,16 @@
-package com.lazymonkeystudio.engine;
+package com.lazymonkeystudios.magiccounter;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class GameActivity extends Activity {
+public class MainActivity extends Activity {
 
-    /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,13 +19,13 @@ public class GameActivity extends Activity {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         //set screen full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //setContentView(new Engine_GamePanel(this, 30));
+        setContentView(new Main_Panel(this, 30));
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_game, menu);
+        getMenuInflater().inflate(com.lazymonkeystudio.engine.R.menu.menu_game, menu);
         return true;
     }
 
@@ -42,11 +37,10 @@ public class GameActivity extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == com.lazymonkeystudio.engine.R.id.action_settings) {
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
-    */
 }
