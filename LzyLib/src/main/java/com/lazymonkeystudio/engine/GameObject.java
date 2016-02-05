@@ -3,11 +3,12 @@ package com.lazymonkeystudio.engine;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
+import android.view.View;
 
 /**
  * Created by Will on 11/13/2015.
  */
-public class GameObject {
+public class GameObject extends View {
     public Bitmap spritesheet;
     public String tag = "";
     private int x, y, dx, dy, WIDTH, HEIGHT;
@@ -22,6 +23,7 @@ public class GameObject {
 
     public GameObject(String tag, Bitmap res, int x, int y, int columns, int rows)
     {
+        super(GamePanel.sContext);
         //spritesheet = res;
         this.tag = tag;
         setX(x);
@@ -65,6 +67,7 @@ public class GameObject {
 
     public void draw(Canvas canvas)
     {
+        super.draw(canvas);
         canvas.drawBitmap(animation.getImage(), x, y, null);
     }
 
@@ -110,9 +113,9 @@ public class GameObject {
     public int getDx()
     {return dx;}
 
-    public int getX()
+    public float getX()
     {return x;}
 
-    public int getY()
+    public float getY()
     {return y;}
 }

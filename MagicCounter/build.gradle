@@ -5,8 +5,9 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.lazymonkeystudio.magiccounter"
-        minSdkVersion 14
+        applicationId "com.lazymonkeystudios.magiccounter"
+        minSdkVersion 23
+
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
