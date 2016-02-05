@@ -1,1 +1,1 @@
-include  ':magiccounter',':LzyLib'
+include ':magiccounter', ':LzyLib', ':wills_workspace'

@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LazyStudios.iml" filepath="$PROJECT_DIR$/LazyStudios.iml" />
       <module fileurl="file://$PROJECT_DIR$/LzyLib/LzyLib.iml" filepath="$PROJECT_DIR$/LzyLib/LzyLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/magiccounter/magiccounter.iml" filepath="$PROJECT_DIR$/magiccounter/magiccounter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MagicCounter/magiccounter.iml" filepath="$PROJECT_DIR$/MagicCounter/magiccounter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wills_workspace/wills_workspace.iml" filepath="$PROJECT_DIR$/wills_workspace/wills_workspace.iml" />
     </modules>
   </component>
 </project>
