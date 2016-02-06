@@ -5,8 +5,10 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
+import android.view.View;
 
 import com.lazymonkeystudio.engine.Background_Scrolling;
+import com.lazymonkeystudio.engine.Button;
 import com.lazymonkeystudio.engine.DebugGUI;
 import com.lazymonkeystudio.engine.GameObject;
 import com.lazymonkeystudio.engine.GamePanel;
@@ -31,7 +33,7 @@ public class Test_Panel extends GamePanel {
     {
         debug_gui = new DebugGUI();
         background = new Background_Scrolling(this, BitmapFactory.decodeResource(getResources(), R.drawable.background));
-        player = new GameObject("player", BitmapFactory.decodeResource(getResources(), R.drawable.player), 100, 100, 1, 8);
+        player = new Button("player", BitmapFactory.decodeResource(getResources(), R.drawable.player), 100, 100, 1, 8);
         entity_m.addEntity(player);
 
         super.surfaceCreated(holder);
@@ -46,8 +48,8 @@ public class Test_Panel extends GamePanel {
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
-        entity_m.addEntity(player);
-        System.out.println("tapped");
+        //entity_m.addEntity(player);
+        //System.out.println("tapped");
         return super.onTouchEvent(event);
     }
 

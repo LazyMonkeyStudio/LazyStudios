@@ -19,15 +19,16 @@ public class Button extends GameObject {
     {
         return super.onTouchEvent(event);
     }
+
     @Override
     public void update()
     {
-        this.setOnTouchListener(new OnTouchListener() {
+        /*this.setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 return false;
             }
-        });
+        });*/
         //System.out.println(WIDTH + "," + HEIGHT);
         //System.out.println(GamePanel.WIDTH + "," + GamePanel.HEIGHT);
     }

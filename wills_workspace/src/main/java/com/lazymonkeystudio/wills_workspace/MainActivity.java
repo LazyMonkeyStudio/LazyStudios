@@ -12,12 +12,18 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //turn off title
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        //set screen full screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(new Test_Panel(this, 30));
+
+        //below is all you need to create a new project
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //turn off title
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE); //lock as landscape
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN); //set screen full screen
+
+
+        //Goal here is to create a game panel manager
+        //this will allow easability when trying to swtich game panels
+        //theory would be that you switch the panel in the manager and it draws the new panel
+        setContentView(new Test_Panel(this, 30)); //new GamePanel, set your game panel here
     }
 
     @Override

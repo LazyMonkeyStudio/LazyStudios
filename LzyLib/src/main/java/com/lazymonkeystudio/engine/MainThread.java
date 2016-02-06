@@ -5,6 +5,7 @@ import android.view.SurfaceHolder;
 
 /**
  * Created by Will on 11/5/2015.
+ * update the thread every X seconds, based on targetFPS
  */
 public class MainThread extends Thread
 {

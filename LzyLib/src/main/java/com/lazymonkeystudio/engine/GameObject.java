@@ -7,9 +7,10 @@ import android.view.View;
 
 /**
  * Created by Will on 11/13/2015.
+ * Default game object class
  */
 public class GameObject extends View {
-    public Bitmap spritesheet;
+    //public Bitmap spritesheet;
     public String tag = "";
     private int x, y, dx, dy, WIDTH, HEIGHT;
     public double dxa, dya;
@@ -21,6 +22,19 @@ public class GameObject extends View {
     private Animation animation = new Animation();
     private long startTime;
 
+    //no animation contructor
+    public GameObject(String tag, Bitmap res, int x, int y)
+    {
+        super(GamePanel.sContext);
+        this.tag = tag;
+        setX(x);
+        setY(y);
+        this.WIDTH = res.getWidth();
+        this.HEIGHT = res.getHeight();
+        bounds = new Rect(x, y, WIDTH, HEIGHT);
+    }
+
+    //animation by columns and rows constructor
     public GameObject(String tag, Bitmap res, int x, int y, int columns, int rows)
     {
         super(GamePanel.sContext);

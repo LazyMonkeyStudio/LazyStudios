@@ -4,6 +4,7 @@ import android.graphics.Canvas;
 
 /**
  * Created by Will on 11/17/2015.
+ * Manages all entitys (GameObjects) in the world
  */
 public class EntityManager {
     private final int MAX_GAME_OBJ = 15;
@@ -15,6 +16,7 @@ public class EntityManager {
 
     }
 
+    //adds an entity to the world array
     public void addEntity(GameObject obj)
     {
         for(GameObject go : world_objects)
@@ -28,6 +30,7 @@ public class EntityManager {
         }
     }
 
+    //removed and entity from the world array
     public void removeEntity(String tag)
     {
         int count = 0;
@@ -43,6 +46,7 @@ public class EntityManager {
         }
     }
 
+    //updates all entities in the world array
     public void update()
     {
         for(GameObject go : world_objects)
@@ -54,6 +58,7 @@ public class EntityManager {
         }
     }
 
+    //draws all entities in the world array
     public void draw(Canvas canvas)
     {
         for(GameObject go : world_objects)
@@ -61,7 +66,7 @@ public class EntityManager {
             if(go!=null)
             {
                 go.draw(canvas);
-                System.out.println("drew object");
+                //System.out.println("drew object");
             }
         }
     }

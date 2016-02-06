@@ -4,6 +4,9 @@ import android.graphics.Bitmap;
 
 /**
  * Created by Will on 11/13/2015.
+ * Animation class, this is where animation takes place
+ * call setFrames and pass it a bitmap array, it will loop through array
+ * call setDelay, this will give your animations a delay
  */
 public class Animation {
     private Bitmap[] frames;
@@ -11,6 +14,7 @@ public class Animation {
     private long startTime, delay;
     private boolean playedOnce;
 
+    //populates the bitmap array to know what image to loop over
     public void setFrames(Bitmap[] frames)
     {
         this.frames = frames;
@@ -23,6 +27,9 @@ public class Animation {
 
     }
 
+    //animation update, without this your animations wont update, aka change frames
+    //if the elapsed time is greater than the delay it will increment the frame
+    //if the current frame is the last one it'll start over from frame 0
     public void update()
     {
         long elapsed = (System.nanoTime()-startTime)/1000000;
@@ -40,17 +47,16 @@ public class Animation {
         }
     }
     public Bitmap getImage()
-    {return frames[currentFrame];}
+    {return frames[getFrame()];} //gets the current Image in the loop
 
     public int getFrame()
-    {return currentFrame;}
-
-    public boolean playedOnce()
-    {return playedOnce;}
+    {return currentFrame;} //gets the current Frame number
 
     public void setDelay(int d)
-    {delay = d;}
+    {delay = d;} //sets the delay between each frame
+    //plan to add onto this to make the delay based on the amount of frames
+    //instead of being hardcoded
 
     public void setFrames(int i)
-    {currentFrame = i;}
+    {currentFrame = i;}//set the frame to which ever picture in the image
 }

@@ -4,6 +4,7 @@ import android.graphics.Canvas;
 
 /**
  * Created by Will on 11/13/2015.
+ * gives physics to all objects in the entity world array
  */
 public class Physics {
     private GamePanel gamePanel;

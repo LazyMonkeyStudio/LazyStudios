@@ -4,10 +4,11 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.widget.TextView;
 
 /**
  * Created by Will on 11/6/2015.
+ * Debug GUI
+ * this will be a class that handles some Debug objects for in game debugging
  */
 public class DebugGUI {
     //private TextView fpsCount;
@@ -29,6 +30,7 @@ public class DebugGUI {
         //System.out.println("text prinited");
     }
 
+    //draws the current fps to the screen as text Example: 30
     private void draw_fps(Canvas canvas) {
         Paint paint = new Paint();
         paint.setTextSize(100);

@@ -8,6 +8,7 @@ import android.view.SurfaceView;
 
 /**
  * Created by Will on 11/5/2015.
+ * Default GamePanel
  */
 public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
 {
@@ -17,6 +18,11 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
     public Background background;
     public EntityManager entity_m;
     static Context sContext;
+
+    //Upon creation of game panel, set the context
+    //create the Entity Manager
+    //create the Main thread
+    //set the frames per second
     public GamePanel(Context context, int targetFPS)
     {
         super(context);

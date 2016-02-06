@@ -5,6 +5,8 @@ import android.graphics.Canvas;
 
 /**
  * Created by Will on 11/11/2015.
+ * Extends default background
+ * Default scrolling background
  */
 public class Background_Scrolling extends Background {
     private int dx = -5;
@@ -19,7 +21,7 @@ public class Background_Scrolling extends Background {
     {
         super.update();
         X+=dx;
-        if(X<-GamePanel.WIDTH)
+        if(X<-GamePanel.WIDTH) //moves the background image
         {
             X=0;
         }
