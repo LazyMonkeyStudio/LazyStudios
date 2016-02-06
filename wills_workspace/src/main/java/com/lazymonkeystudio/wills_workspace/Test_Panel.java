@@ -31,7 +31,7 @@ public class Test_Panel extends GamePanel {
     {
         debug_gui = new DebugGUI();
         background = new Background_Scrolling(this, BitmapFactory.decodeResource(getResources(), R.drawable.background));
-        player = new GameObject("player", BitmapFactory.decodeResource(getResources(), R.drawable.player), 100, 100, 1, 3);
+        player = new GameObject("player", BitmapFactory.decodeResource(getResources(), R.drawable.player), 100, 100, 1, 8);
         entity_m.addEntity(player);
 
         super.surfaceCreated(holder);
