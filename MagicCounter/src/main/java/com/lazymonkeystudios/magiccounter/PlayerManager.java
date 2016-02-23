@@ -6,7 +6,7 @@ import java.util.List;
  * Created by Mobil HQ on 12/15/2015.
  */
 public class PlayerManager {
-    List<Player> playerList;
+    public static List<Player> playerList;
     int defaultPlayers = 2;
     public PlayerManager()
     {

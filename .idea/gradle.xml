@@ -11,7 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/LzyLib" />
-            <option value="$PROJECT_DIR$/MagicCounter" />
+            <option value="$PROJECT_DIR$/magiccounter" />
             <option value="$PROJECT_DIR$/wills_workspace" />
           </set>
         </option>
